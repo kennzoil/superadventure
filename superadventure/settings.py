@@ -80,6 +80,15 @@ DATABASES = {
     }
 }
 
+# MongoDB connection
+username = "superadventure"
+password = "huzzah694208008135"
+auth_mch = "DEFAULT"
+con_str = (
+    f"mongodb+srv://{username}:{password}"
+    f"@superadventure.sgvke9c.mongodb.net/test?authMechanism={auth_mch}"
+    )
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators

@@ -1,3 +1,4 @@
-.env/*
+.DS_Store
+.superenv/*
 .idea/*
 */__pycache__/*
