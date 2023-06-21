@@ -1,7 +1,8 @@
 from django.urls import path
+from django.shortcuts import render
 
-from frontend.views import HomeView
+from . import views
 
 urlpatterns = [
-    path("", HomeView),
+    path("", views.index, name="index"),
 ]
