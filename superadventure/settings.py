@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'game',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -75,19 +76,14 @@ WSGI_APPLICATION = 'superadventure.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'test_db',
+        'USER': '',
+        'PASSWORD': '',
+        'PORT': 5432,
+        'HOST': '127.0.0.1'
     }
 }
-
-# MongoDB connection
-username = "superadventure"
-password = "huzzah694208008135"
-auth_mch = "DEFAULT"
-con_str = (
-    f"mongodb+srv://{username}:{password}"
-    f"@superadventure.sgvke9c.mongodb.net/test?authMechanism={auth_mch}"
-    )
 
 
 # Password validation
