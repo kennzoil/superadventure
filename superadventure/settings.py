@@ -76,14 +76,32 @@ WSGI_APPLICATION = 'superadventure.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'test_db',
-        'USER': '',
-        'PASSWORD': '',
-        'PORT': 5432,
-        'HOST': '127.0.0.1'
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'superadventure',
+        'USER': 'root',
+        'PASSWORD': 'password',
+        'HOST': 'localhost',
+        'PORT': '3306'
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': 'mydatabase',
+#     }
+# }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'superadventure',
+#         'USER': '',
+#         'PASSWORD': '',
+#         'PORT': 5432,
+#         'HOST': '127.0.0.1'
+#     }
+# }
 
 
 # Password validation
@@ -110,7 +128,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Chicago'
 
 USE_I18N = True
 
