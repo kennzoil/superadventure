@@ -2,3 +2,4 @@
 .superenv/*
 .idea/*
 */__pycache__/*
+game/migrations/*
